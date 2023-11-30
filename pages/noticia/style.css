@@ -1,0 +1,635 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 100, 200, 300, 600, 800;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+/* Padrão para todos os elementos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: Poppins;
+}
+
+/* Variáveis */
+
+:root {
+  --color-dark: #000000;
+  --color-dark2: #141414;
+  --color-dark3: #1414146b;
+  --color-white: #ffffff;
+  --color-orange: rgb(150, 150, 9);
+  --color-green3: rgb(21, 190, 35);
+  --color-blue: #2636e0;
+
+  --color-blue4: #091596;
+  --color-blue5: #070f66;
+  --color-gray: rgb(136, 135, 135);
+  --color-gray2: rgba(238, 236, 236, 0.973);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Media DeskTop */
+/* ==> Navegação Header */
+.header {
+  background: var(--color-white);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 0 1rem var(--color-dark3);
+  position: fixed;
+  font-weight: 900;
+  top: 0;
+  z-index: 9999;
+}
+#logo {
+  margin-left: 4rem;
+}
+.imageLogo {
+  width: 2.8rem;
+}
+#buttonMenu {
+  display: none;
+}
+#navHeader {
+  width: 65%;
+}
+.navListHeader {
+  display: flex;
+  gap: 6rem;
+}
+
+.navListHeader a {
+  color: var(--color-dark2);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem;
+}
+.navListHeader a:hover {
+  color: var(--color-blue);
+}
+/*header*/
+/* conteudo principal*/
+main {
+  min-width: 280px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+#noticias {
+  width: 100%;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+.title-principal {
+  margin: 5.5rem 0 1rem 0;
+  padding-left: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--color-blue);
+}
+#noticia-vinijr,
+#noticia-neymar,
+#noticia-fernandodiniz,
+#noticia-olimpiada {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  gap: 1rem;
+}
+#noticia-vinijr {
+  grid-column: 1 / span 2;
+}
+.container-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.container-image-neymar {
+  width: 82%;
+  height: auto;
+  overflow: hidden;
+}
+.container-image-diniz {
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+.container-image-time {
+  width: 82%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+.image-vinijr,
+.image-neymar,
+.image-diniz,
+.image-time {
+  border-radius: 0.2rem;
+  height: auto;
+  transition: all 1s;
+  width: 100%;
+}
+
+.image-vinijr:hover,
+.image-neymar:hover,
+.image-diniz:hover,
+.image-time:hover {
+  transform: scale(1.02);
+  filter: brightness(85%);
+  cursor: pointer;
+}
+.subtitle {
+  margin-top: 0.5rem;
+  color: var(--color-dark2);
+}
+.title-segundario {
+  font-family: Montserrat;
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+.resume-vinijr,
+.resume-neymar,
+.resume-diniz,
+.resume-time {
+  text-align: justify;
+  color: var(--color-dark2);
+}
+.resume-vinijr:hover,
+.resume-neymar:hover,
+.resume-diniz:hover,
+.resume-time:hover {
+  color: var(--color-blue);
+}
+.caption-vinijr,
+.caption-neymar,
+.caption-diniz,
+.caption-time {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.caption-vinijr:hover,
+.caption-neymar:hover,
+.caption-diniz:hover,
+.caption-time:hover {
+  cursor: pointer;
+  color: var(--color-blue);
+}
+.container-btn {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+
+  padding-right: 3rem;
+  margin-top: 1.5rem;
+}
+.timer-noticia {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+.btn-ver-mais {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.btn-ver-mais a:hover {
+  transition: all 0.4s;
+  border-radius: 0.2rem;
+  color: var(--color-dark2);
+}
+.btn-ver-mais a {
+  transition: all 0.4s;
+  color: var(--color-orange);
+  padding: 0.3rem 2.4rem;
+}
+
+#noticia-neymar {
+  grid-column: 1 / span 2;
+}
+#noticia-fernandodiniz {
+  grid-column: 1 / span 2;
+}
+#noticia-olimpiada {
+  grid-column: 1 / span 2;
+}
+/* conteudo principal*/
+/*footer*/
+footer {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 4rem;
+}
+#newsletter {
+  width: 100%;
+  height: 30vh;
+
+  background-color: var(--color-blue4);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9rem;
+  align-items: center;
+}
+#newsletter span {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: Montserrat;
+}
+.container-input {
+  display: flex;
+  align-items: center;
+}
+.container-input input {
+  width: 30rem;
+  padding-left: 1rem;
+  height: 3rem;
+
+  border: none;
+  font-size: 1.2rem;
+  color: var(--color-dark2);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.container-input input:focus {
+  outline: none;
+}
+#buttonEmail {
+  padding: 0 2.5rem;
+  height: 3rem;
+
+  color: var(--color-dark4);
+  font-weight: 900;
+  font-size: 1rem;
+  background-color: var(--color-green3);
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-left: -1.04px;
+  cursor: pointer;
+}
+#footer-navigation {
+  height: 50vh;
+  width: 100%;
+
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9rem;
+}
+#footer-navigation nav {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-white);
+  cursor: pointer;
+}
+#footer-navigation nav a {
+  color: var(--color-white);
+}
+#footer-navigation nav a:hover,
+#footer-navigation nav li:hover,
+#footer-navigation nav p:hover {
+  text-decoration: underline;
+}
+
+.logo-footer {
+  width: 6.5rem;
+}
+#enderecoCBF {
+  width: 100%;
+  height: 20vh;
+
+  background-color: var(--color-blue5);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9rem;
+  color: var(--color-gray);
+  align-items: center;
+}
+.p-endereco,
+.nomeGrupo {
+  color: var(--color-white);
+}
+h4 {
+  font-family: Montserrat;
+}
+/*footer*/
+
+/* Media Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  #logo {
+    margin-left: 0.1rem;
+  }
+  #navHeader {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  #buttonMenu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menuHamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+    color: var(--color-dark2);
+  }
+  #menuHamburguer::after,
+  #menuHamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #navHeader.active #menuHamburguer {
+    border-top-color: transparent;
+  }
+  #navHeader.active #menuHamburguer::before {
+    transform: rotate(135deg);
+  }
+  #navHeader.active #menuHamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .navListHeader a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--color-blue3);
+  }
+  .navListHeader a:hover {
+    background: var(--color-blue3);
+    color: var(--color-dark2);
+  }
+  .navListHeader {
+    background: var(--color-white);
+    width: 100%;
+    top: 4.4rem;
+    right: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 9999;
+    transition: 0.6s;
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #navHeader.active .navListHeader {
+    height: 40vh;
+    visibility: visible;
+  }
+  footer {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #newsletter {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  #newsletter span {
+    font-size: 1.2rem;
+  }
+  .container-input input {
+    width: 24rem;
+    font-size: 0.9rem;
+  }
+  #buttonEmail {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  #footer-navigation {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+  }
+  #footer-navigation nav {
+    gap: 1rem;
+  }
+  .logo-footer {
+    width: 5.2rem;
+  }
+  #enderecoCBF {
+    height: 40vh;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+} /* Media Mobile */
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  #logo {
+    margin-left: 0.1rem;
+  }
+  #navHeader {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  #buttonMenu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menuHamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+    color: var(--color-dark2);
+  }
+  #menuHamburguer::after,
+  #menuHamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #navHeader.active #menuHamburguer {
+    border-top-color: transparent;
+  }
+  #navHeader.active #menuHamburguer::before {
+    transform: rotate(135deg);
+  }
+  #navHeader.active #menuHamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .navListHeader a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--color-blue3);
+  }
+  .navListHeader a:hover {
+    background: var(--color-blue3);
+    color: var(--color-dark2);
+  }
+  .navListHeader {
+    background: var(--color-white);
+    width: 100%;
+    top: 4.4rem;
+    right: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 9999;
+    transition: 0.6s;
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #navHeader.active .navListHeader {
+    height: 40vh;
+    visibility: visible;
+  }
+  /*noticia*/
+  #noticias {
+    min-height: 100vh;
+  }
+  #noticia-vinijr,
+  #noticia-neymar,
+  #noticia-fernandodiniz,
+  #noticia-olimpiada {
+    flex-direction: column;
+    gap: 1rem;
+    width: 98%;
+  }
+  .container-image-diniz,
+  .container-image-neymar,
+  .container-image-time {
+    width: 100%;
+    overflow: visible;
+  }
+  .image-neymar {
+    width: 100%;
+  }
+  .title-segundario {
+    font-size: 1rem;
+  }
+  .subtitle {
+    font-size: 0.9rem;
+  }
+  .resume-diniz,
+  .resume-neymar,
+  .resume-time,
+  .resume-vinijr {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  .container-btn {
+    width: 100%;
+    padding: 1rem;
+  }
+  .btn-ver-mais {
+    width: 100%;
+    border-radius: 0.2rem;
+    background: var(--color-blue);
+    padding: 0.4rem 0;
+  }
+  .btn-ver-mais a {
+    color: var(--color-white);
+  }
+  /*noticia*/
+  /*footer*/
+  footer {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #newsletter {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  #newsletter span {
+    font-size: 0.9rem;
+  }
+  .container-input input {
+    width: 16rem;
+    font-size: 0.9rem;
+  }
+  #buttonEmail {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  #footer-navigation {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+  }
+  #footer-navigation nav {
+    gap: 1rem;
+  }
+  .logo-footer {
+    width: 5.2rem;
+  }
+  #enderecoCBF {
+    height: 40vh;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  /*footer*/
+}

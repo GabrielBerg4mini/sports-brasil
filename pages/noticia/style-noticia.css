@@ -1,0 +1,801 @@
+@font-face {
+  font-family: "Poppins";
+  src: url("../../assets/fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+}
+@font-face {
+  font-family: "Light-poppins";
+  src: url("../../assets/fonts/Poppins/Poppins-Light.ttf");
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+/* Padrão para todos os elementos */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Variáveis */
+
+:root {
+  --color-dark: #000000;
+  --color-dark2: #141414;
+  --color-dark3: #1414146b;
+  --color-white: #ffffff;
+  --color-green3: rgb(21, 190, 35);
+  --color-orange: rgb(150, 150, 9);
+  --color-blue: #2636e0;
+  --color-blue4: #091596;
+  --color-blue5: #070f66;
+  --color-gray: rgb(136, 135, 135);
+  --color-gray2: rgb(233, 233, 233);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+/*header*/
+.header {
+  background: var(--color-white);
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 0 0 1rem var(--color-dark3);
+  position: fixed;
+  font-weight: 900;
+  top: 0;
+  z-index: 9999;
+}
+#logo {
+  margin-left: 4rem;
+}
+.imageLogo {
+  width: 2.8rem;
+}
+#buttonMenu {
+  display: none;
+}
+#navHeader {
+  width: 65%;
+}
+.navListHeader {
+  display: flex;
+  gap: 6rem;
+}
+
+.navListHeader a {
+  color: var(--color-dark2);
+  font-size: 1rem;
+  display: block;
+  padding: 0.5rem;
+}
+.navListHeader a:hover {
+  color: var(--color-blue);
+}
+/*header*/
+/*main*/
+main {
+  min-width: 280px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+#noticia-principal {
+  margin-top: 5.5rem;
+  width: 100%;
+}
+.container-image-noticia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container-image-noticia section {
+  width: 70%;
+}
+.title-principal,
+.title-segundario,
+.title-patrocinio {
+  font-family: Montserrat;
+  margin-bottom: 1rem;
+  color: var(--color-blue);
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.caption {
+  font-size: 0.9rem;
+}
+.resume {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.container-noticia {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-image {
+  width: 70%;
+  background-color: var(--color-gray2);
+  border-radius: 0.2rem;
+}
+.image {
+  width: 100%;
+  border-radius: 0.2rem;
+}
+.container-text-image {
+  padding: 0.5rem;
+}
+.container-text-noticia {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  margin: 1.5rem 0 2rem 0;
+}
+.container-text-noticia section {
+  width: 70%;
+}
+.text-noticia,
+.container-li-text p,
+.caption {
+  font-family: "Light-poppins", sans-serif;
+  font-weight: lighter;
+}
+#noticias-relacionadas {
+  width: 100%;
+  margin: 5rem 0 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-title-segundario {
+  width: 100%;
+  text-align: left;
+}
+
+.container-noticias-relacionadas nav {
+  width: 100%;
+}
+.container-images-noticias {
+  display: flex;
+  gap: 1px;
+}
+
+.container-li-image-neymar,
+.container-li-image-diniz,
+.container-li-image-vini,
+.container-li-image-time {
+  width: 310px;
+  height: 305px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 0.2rem;
+}
+.container-li-image-neymar::before {
+  content: "Neymar-craque da semana";
+
+  position: absolute;
+  width: 95%;
+
+  bottom: 0px;
+  padding-left: 1rem;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.767)
+  );
+  font: 800 1.3rem Montserrat;
+  color: var(--color-white);
+  pointer-events: none;
+  z-index: 1;
+}
+.container-li-text {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0.2rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.btn-li-text {
+  border: none;
+  margin-top: 0.5rem;
+  background: transparent;
+}
+.wiperLink-btn-li-text {
+  padding: 0 1rem 0 1rem;
+  color: var(--color-orange);
+  transition: all 0.2s;
+}
+.wiperLink-btn-li-text:hover {
+  color: var(--color-dark2);
+}
+.container-li-image-diniz::before {
+  content: "Fernando Diniz- Estrategista";
+  position: absolute;
+  width: 95%;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.767)
+  );
+  padding-left: 1rem;
+  bottom: 0;
+  font: 800 1.3rem Montserrat;
+  color: var(--color-white);
+  z-index: 1;
+}
+.container-li-image-time::before {
+  content: "Time Pronto- Olimpiadas 2024";
+  position: absolute;
+  width: 95%;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.767)
+  );
+  padding-left: 1rem;
+  bottom: 0;
+  font: 800 1.3rem Montserrat;
+  color: var(--color-white);
+  z-index: 1;
+}
+.container-li-image-vini::before {
+  content: "Vini Jr - Destaque da";
+  position: absolute;
+  width: 95%;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.767)
+  );
+  padding-left: 1rem;
+  bottom: 0;
+  font: 800 1.3rem Montserrat;
+  color: var(--color-white);
+  z-index: 1;
+}
+.container-images-noticias img {
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  border-radius: 0.2rem;
+}
+.container-images-noticias img:hover {
+  transform: scale(1.02);
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: all 0.2s;
+  filter: opacity(90%);
+}
+#sectionPatrocinio {
+  width: 100%;
+  min-height: 100vh;
+}
+.container-logos {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+hr {
+  height: 3.2px;
+  background-color: var(--color-blue);
+}
+.logos-1,
+.logos-3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.logos-2 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+.container-logo-2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/*main*/
+/*footer*/
+footer {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 4rem;
+}
+#newsletter {
+  width: 100%;
+  height: 30vh;
+
+  background-color: var(--color-blue4);
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9rem;
+  align-items: center;
+}
+#newsletter span {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-family: Montserrat;
+}
+.container-input {
+  display: flex;
+  align-items: center;
+}
+.container-input input {
+  width: 30rem;
+  padding-left: 1rem;
+  height: 3rem;
+
+  border: none;
+  font-size: 1.2rem;
+  color: var(--color-dark2);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.container-input input:focus {
+  outline: none;
+}
+#buttonEmail {
+  padding: 0 2.5rem;
+  height: 3rem;
+
+  color: var(--color-dark4);
+  font-weight: 900;
+  font-size: 1rem;
+  background-color: var(--color-green3);
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-left: -1.04px;
+  cursor: pointer;
+}
+#footer-navigation {
+  height: 50vh;
+  width: 100%;
+
+  background-color: var(--color-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 9rem;
+}
+#footer-navigation nav {
+  width: 85%;
+  display: flex;
+  justify-content: space-around;
+  color: var(--color-white);
+  cursor: pointer;
+}
+#footer-navigation nav a {
+  color: var(--color-white);
+}
+#footer-navigation nav a:hover,
+#footer-navigation nav li:hover,
+#footer-navigation nav p:hover {
+  text-decoration: underline;
+}
+
+.logo-footer {
+  width: 6.5rem;
+}
+#enderecoCBF {
+  width: 100%;
+  height: 20vh;
+
+  background-color: var(--color-blue5);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 9rem;
+  color: var(--color-gray);
+  align-items: center;
+}
+.p-endereco,
+.nomeGrupo {
+  color: var(--color-white);
+}
+h4 {
+  font-family: Montserrat;
+}
+/*footer*/
+@media (min-width: 600px) and (max-width: 991px) {
+  .header {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+  #logo {
+    margin-left: 0.1rem;
+  }
+  #navHeader {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  #buttonMenu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menuHamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+    color: var(--color-dark2);
+  }
+  #menuHamburguer::after,
+  #menuHamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #navHeader.active #menuHamburguer {
+    border-top-color: transparent;
+  }
+  #navHeader.active #menuHamburguer::before {
+    transform: rotate(135deg);
+  }
+  #navHeader.active #menuHamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .navListHeader a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--color-blue3);
+  }
+  .navListHeader a:hover {
+    background: var(--color-blue3);
+    color: var(--color-dark2);
+  }
+  .navListHeader {
+    background: var(--color-white);
+    width: 100%;
+    top: 4.4rem;
+    right: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 9999;
+    transition: 0.6s;
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #navHeader.active .navListHeader {
+    height: 40vh;
+    visibility: visible;
+  }
+  .container-images-noticias {
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible;
+    gap: 0.5rem;
+  }
+  .container-li-image-neymar,
+  .container-li-image-diniz,
+  .container-li-image-vini,
+  .container-li-image-time {
+    width: 100%;
+  }
+  .container-li-image-neymar::before,
+  .container-li-image-diniz::before,
+  .container-li-image-vini::before,
+  .container-li-image-time::before {
+    padding-bottom: 0.5rem;
+  }
+  li {
+    width: 49%;
+  }
+  .container-images-noticias img {
+    width: 100%;
+  }
+  .container-logos {
+    min-height: 150vh;
+  }
+  .container-logos img {
+    width: 7rem;
+  }
+  .logos-1,
+  .logos-2 {
+    margin-bottom: 1rem;
+  }
+  .logos-3,
+  .logos-2 {
+    margin-top: 1rem;
+  }
+  .logos-1,
+  .logos-2,
+  .logos-3,
+  .container-logo-2 {
+    gap: 4rem;
+  }
+  .container-logo-2 {
+    flex-wrap: wrap;
+  }
+  footer {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #newsletter {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  #newsletter span {
+    font-size: 1.2rem;
+  }
+  .container-input input {
+    width: 24rem;
+    font-size: 0.9rem;
+  }
+  #buttonEmail {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  #footer-navigation {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+  }
+  #footer-navigation nav {
+    gap: 1rem;
+  }
+  .logo-footer {
+    width: 5.2rem;
+  }
+  #enderecoCBF {
+    height: 40vh;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    display: flex;
+    height: 13vh;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+  }
+  #logo {
+    margin-left: 0.1rem;
+  }
+  #navHeader {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  #buttonMenu {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menuHamburguer {
+    width: 20px;
+    border-top: 2px solid;
+    display: block;
+    color: var(--color-dark2);
+  }
+  #menuHamburguer::after,
+  #menuHamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #navHeader.active #menuHamburguer {
+    border-top-color: transparent;
+  }
+  #navHeader.active #menuHamburguer::before {
+    transform: rotate(135deg);
+  }
+  #navHeader.active #menuHamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  .navListHeader a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 100;
+    border-bottom: 2px solid var(--color-blue3);
+  }
+  .navListHeader a:hover {
+    background: var(--color-blue3);
+    color: var(--color-dark2);
+  }
+  .navListHeader {
+    background: var(--color-white);
+    width: 100%;
+    top: 4.4rem;
+    right: 0px;
+    height: 0px;
+    position: absolute;
+    z-index: 9999;
+    transition: 0.6s;
+    display: block;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  #navHeader.active .navListHeader {
+    height: 40vh;
+    visibility: visible;
+  }
+
+  /*main*/
+  #noticia-principal {
+    margin-top: 8rem;
+  }
+  .container-image-noticia section,
+  .container-noticia section,
+  .container-text-noticia section {
+    width: 94%;
+  }
+  .container-image,
+  .container-image img {
+    width: 100%;
+  }
+  .container-text-noticia {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+  }
+  .container-noticias-relacionadas {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+  }
+  .container-images-noticias {
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    gap: 1rem;
+  }
+  .container-li-image-neymar,
+  .container-li-image-diniz,
+  .container-li-image-vini,
+  .container-li-image-time {
+    width: 100%;
+  }
+  .container-li-image-neymar::before,
+  .container-li-image-diniz::before,
+  .container-li-image-vini::before,
+  .container-li-image-time::before {
+    padding-bottom: 0.5rem;
+  }
+  li {
+    width: 96%;
+  }
+  .container-images-noticias img {
+    width: 100%;
+  }
+  #noticias-relacionadas {
+    min-height: 220vh;
+  }
+  .container-logos {
+    min-height: 150vh;
+  }
+  .container-logos img {
+    width: 5rem;
+  }
+  .logos-1,
+  .logos-2 {
+    margin-bottom: 1rem;
+  }
+  .logos-3,
+  .logos-2 {
+    margin-top: 1rem;
+  }
+  .logos-1,
+  .logos-2,
+  .logos-3,
+  .container-logo-2 {
+    gap: 4rem;
+  }
+  .container-logo-2 {
+    flex-wrap: wrap;
+  }
+  .title-segundario,
+  .title-patrocinio {
+    padding-left: 0.6rem;
+  }
+  /*main*/
+  /*footer*/
+  footer {
+    width: 100%;
+    min-height: 100vh;
+  }
+  #newsletter {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  #newsletter span {
+    font-size: 0.9rem;
+  }
+  .container-input input {
+    width: 16rem;
+    font-size: 0.9rem;
+  }
+  #buttonEmail {
+    padding: 0 1rem;
+    font-size: 0.8rem;
+  }
+  #footer-navigation {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+  }
+  #footer-navigation nav {
+    gap: 1rem;
+  }
+  .logo-footer {
+    width: 5.2rem;
+  }
+  #enderecoCBF {
+    height: 40vh;
+    flex-direction: column;
+    padding: 0 0.7rem;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    font-size: 0.9rem;
+  }
+  /*footer*/
+}

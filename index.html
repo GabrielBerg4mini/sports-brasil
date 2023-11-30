@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore a rica história da seleção brasileira de futebol: dos lendários jogadores às emocionantes partidas. Descubra tudo sobre a trajetória da seleção canarinho em nosso site dedicado ao futebol brasileiro."
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/svgs/logo.svg" type="image/x-icon" />
+    <title>Sports Brasil</title>
+  </head>
+
+  <body>
+    <!-- Navegação entre as páginas -->
+    <header class="header">
+      <a href="../index.html" id="logo"
+        ><img class="imageLogo" src="./assets/svgs/logo.svg" alt="Logo CBF"
+      /></a>
+
+      <nav id="navHeader">
+        <button
+          aria-label="Abrir Menu"
+          id="buttonMenu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="menuHamburguer"></span>
+        </button>
+        <ul class="navListHeader" role="menu">
+          <li><a href="./pages/sobre/sobre.html">SOBRE A CBF</a></li>
+          <li>
+            <a href="./pages/jogadores/jogadores.html">SELEÇÃO BRASILEIRA</a>
+          </li>
+          <li><a href="./pages/noticia/noticia.html">NOTÍCIAS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Navegação entre as páginas -->
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Conteudo Destaque-->
+      <section id="sectionNoticia">
+        <h1 class="title-principal">Destaques da Semana</h1>
+        <article class="container-principal">
+          <div class="container-vini col">
+            <a href="./pages/noticia/pages-noticias/noticia-vini.html"
+              ><picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="./assets/images/vinijr-mobile.png"
+                />
+                <source
+                  media="(min-width: 602px) and (max-width: 990px)"
+                  srcset="./assets/images/vinijr-mobile.png"
+                />
+
+                <img
+                  src="./assets/images/vinijr2.jpg"
+                  alt="Imagem vinijr"
+                /> </picture
+            ></a>
+          </div>
+          <div class="container-neymar col">
+            <a href="./pages/noticia/pages-noticias/noticia-neymar.html">
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="./assets/images/neymar-mobile.png"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/neymar-mobile.png"
+                />
+                <img
+                  class="image-neymar"
+                  src="./assets/images/neymar.png"
+                  alt="Imagem neymar"
+                />
+              </picture>
+            </a>
+          </div>
+
+          <div class="container-diniz col">
+            <a href="./pages/noticia/pages-noticias/noticia-diniz.html">
+              <picture>
+                <source
+                  media="(max-width: 600px)"
+                  srcset="./assets/images/fernandodiniz-mobile.png" />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/images/fernandodiniz-mobile.png" />
+                <img
+                  src="./assets/images/fernandodiniz.jpg"
+                  alt="Imagem fernandodiniz"
+              /></picture>
+            </a>
+          </div>
+        </article>
+      </section>
+      <!-- Conteudo Destaque -->
+      <!-- Conteudo Jogos -->
+      <section id="sectionJogos">
+        <h2 class="title-jogos">Jogos Do Mês</h2>
+        <article id="tabelaJogos">
+          <table>
+            <caption>
+              Copa do Mundo 2022
+            </caption>
+            <thead>
+              <tr>
+                <th>Países</th>
+                <th>Países</th>
+                <th>Dias</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/argentina.svg"
+                      alt="Icon bandeira do Argentina"
+                    />
+                    <span>Argentina</span>
+                  </div>
+                </td>
+                <td>06/02 - 17h40</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/japan.svg"
+                      alt="Icon bandeira do Japão"
+                    />
+                    <span>Japão</span>
+                  </div>
+                </td>
+                <td>08/02 - 16h20</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/franca.svg"
+                      alt="Icon bandeira do França"
+                    />
+                    <span>França</span>
+                  </div>
+                </td>
+                <td>12/02 - 15h20</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/alemanha.svg"
+                      alt="Icon bandeira do Alemanha"
+                    />
+                    <span>Alemanha</span>
+                  </div>
+                </td>
+                <td>18/02 - 13h30</td>
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/korea.svg"
+                      alt="Icon bandeira do Korea"
+                    />
+                    <span>Korea</span>
+                  </div>
+                </td>
+                <td>20/02 - 14h00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/mexico.svg"
+                      alt="Icon bandeira do México"
+                    />
+                    <span>México</span>
+                  </div>
+                </td>
+                <td>23/02 - 12h00</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/croacia.svg"
+                      alt="Icon bandeira do Croácia"
+                    />
+                    <span>Croácia</span>
+                  </div>
+                </td>
+                <td>25/02 - 16h20</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/eua.svg"
+                      alt="Icon bandeira do EUA"
+                    />
+                    <span>EUA</span>
+                  </div>
+                </td>
+                <td>27/02 - 15h10</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/brasil.svg"
+                      alt="Icon bandeira do Brasil"
+                    />
+                    <span>Brasil</span>
+                  </div>
+                </td>
+                <td>
+                  <div class="container-bandeira-pais">
+                    <img
+                      src="./assets/svgs/peru.svg"
+                      alt="Icon bandeira do Peru"
+                    />
+                    <span>Peru</span>
+                  </div>
+                </td>
+                <td>25/02 - 12h00</td>
+              </tr>
+            </tbody>
+          </table>
+          <span
+            class="overflowTabela"
+            data-state="visible"
+            aria-hidden="true"
+          ></span>
+        </article>
+        <button class="buttonTabelaJogos" data-state="more">Ver Mais!</button>
+      </section>
+      <!-- Conteudo Jogos -->
+      <section id="sectionVideos">
+        <h1 class="titleVideos">Jogadas da Semana</h1>
+        <article id="container-videos">
+          <div class="gallery-wrapper">
+            <div class="gallery">
+              <div class="item current-item">
+                <img
+                  src="./assets/images/alexandro-carrossel.png"
+                  alt="alexandro carrossel"
+                  class="image-carrossel"
+                  data-video="video1"
+                />
+              </div>
+              <div class="popup" id="video1">
+                <video controls class="popup-video" id="popup-video1">
+                  <source src="./assets/movies/gol-1.mp4" type="video/mp4" />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video1')"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="item current-item">
+                <img
+                  src="./assets/images/neymar-carrossel.png"
+                  alt="neymar carrossel"
+                  class="image-carrossel"
+                  data-video="video2"
+                />
+              </div>
+              <div class="popup" id="video2">
+                <video controls class="popup-video" id="popup-video2">
+                  <source src="./assets/movies/gol-2.mp4" type="video/mp4" />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video2')"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="item current-item">
+                <img
+                  src="./assets/images/everton-carrossel.png"
+                  alt="éverton carrossel"
+                  class="image-carrossel"
+                  data-video="video3"
+                />
+              </div>
+              <div class="popup" id="video3">
+                <video controls class="popup-video" id="video3">
+                  <source src="./assets/movies/gol-3.mp4" type="video/mp4" />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video3')"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="item current-item">
+                <img
+                  src="./assets/images/richarlison-carrossel.png"
+                  alt="richarlison carrossel"
+                  class="image-carrossel"
+                  data-video="video4"
+                />
+              </div>
+              <div class="popup" id="video4">
+                <video controls class="popup-video" id="popup-video4">
+                  <source src="./assets/movies/gol-4.mp4" type="video/mp4" />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video4')"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="item current-item">
+                <img
+                  src="./assets/images/alexandro-quase-gol.png"
+                  alt="alexandro carrossel"
+                  class="image-carrossel"
+                  data-video="video5"
+                />
+              </div>
+              <div class="popup" id="video5">
+                <video controls class="popup-video" id="popup-video5">
+                  <source
+                    src="./assets/movies/quase-gol-1.mp4"
+                    type="video/mp4"
+                  />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video5')"
+                >
+                  &times;
+                </button>
+              </div>
+              <div class="item current-item">
+                <img
+                  src="./assets/images/alex-carrossel.png"
+                  alt="alex carrossel"
+                  class="image-carrossel"
+                  data-video="video6"
+                />
+              </div>
+              <div class="popup" id="video6">
+                <video controls class="popup-video" id="popup-video6">
+                  <source
+                    src="./assets/movies/quase-gol-2.mp4"
+                    type="video/mp4"
+                  />
+                  Seu browser não suporta esse tipo de vídeo.
+                </video>
+                <button
+                  class="close-button"
+                  onclick="closeVideoPopup('video6')"
+                >
+                  &times;
+                </button>
+              </div>
+            </div>
+            <button class="prev-button control">
+              <img
+                src="./assets/svgs/arrow-left.svg"
+                alt="arrow left"
+                class="arrows"
+              />
+            </button>
+            <button class="next-button control">
+              <img
+                src="./assets/svgs/arrow-right.svg"
+                alt="arrow right"
+                class="arrows"
+              />
+            </button>
+          </div>
+        </article>
+      </section>
+      <!--Section Patrocionios -->
+      <section id="sectionPatrocinio">
+        <h1 class="title-patrocinio">Patrocinadores da CBF</h1>
+        <article class="container-logos">
+          <div class="logos-1">
+            <img src="./assets/svgs/Nike logo.svg" alt="Logo Nike" />
+            <img
+              src="./assets/svgs/guarana-antarctica-logo.svg"
+              alt="Logo Guaraná antarctica"
+            />
+            <img src="./assets/svgs/vivo.svg" alt="Logo Vivo" />
+            <img src="./assets/svgs/itau.svg" alt="Logo Itaú" />
+            <img src="./assets/svgs/neoenergia.svg" alt="Logo NeoEnergia" />
+          </div>
+          <hr />
+          <div class="logos-2">
+            <img src="./assets/svgs/mastercard.svg" alt="Logo MasterCard" />
+            <img src="./assets/svgs/gol.svg" alt="Logo Gol" />
+            <img src="./assets/svgs/kwai.svg" alt="Logo Kwai" />
+            <img src="./assets/svgs/kavak.svg" alt="Logo Kavak" />
+            <div class="container-logo-2">
+              <img src="./assets/svgs/cimed.svg" alt="Logo Cimed" />
+              <img src="./assets/svgs/paguemenos.svg" alt="Logo Pague Menos" />
+              <img src="./assets/svgs/semptcl.svg" alt="Logo Semp TCL" />
+              <img src="./assets/svgs/zedelivery.svg" alt="Logo Zé Delivery" />
+            </div>
+          </div>
+          <hr />
+          <div class="logos-3">
+            <img src="./assets/svgs/technogym.svg" alt="Logo TechnoGym" />
+            <img src="./assets/svgs/statsports.svg" alt="Logo Stat Sports" />
+            <img src="./assets/svgs/kin.svg" alt="Logo Kin Analytics" />
+            <img
+              src="./assets/svgs/globus.svg"
+              alt="Logo Globus Italian Excellence"
+            />
+          </div>
+        </article>
+      </section>
+      <!--Section Patrocionios -->
+    </main>
+    <!-- Conteúdo principal -->
+    <!-- Links externos -->
+    <footer>
+      <section id="newsletter">
+        <span
+          >Quer ficar por dentro da nossa newsletter?
+          <br />
+          Mande seu E-mail e fique ligado.
+        </span>
+        <div class="container-input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ex: carlosbruno@gmail.com"
+          />
+          <button name="button-email" id="buttonEmail">ASSINAR</button>
+        </div>
+      </section>
+      <section id="footer-navigation">
+        <a href="index.html"
+          ><img
+            src="./assets/svgs/logo.svg"
+            alt="Logo do Brasil"
+            class="logo-footer"
+        /></a>
+        <nav>
+          <div>
+            <div></div>
+            <h1>A CBF</h1>
+            <ul>
+              <li><a href="./pages/sobre/sobre.html">Sobre a CBF</a></li>
+              <li>Arbitragem</li>
+              <li>Pelos Estados</li>
+              <li>CNRD</li>
+            </ul>
+          </div>
+          <div>
+            <h1>
+              SELEÇÃO
+              <br />
+              BRASILEIRA
+            </h1>
+            <ul>
+              <li><a href="./pages/noticia/noticia.html">Notícias</a></li>
+              <li>Torcedor</li>
+              <li>Jogos</li>
+            </ul>
+          </div>
+          <div>
+            <h1>CBF TV</h1>
+            <p>Últimos Vídeos</p>
+          </div>
+          <div>
+            <h1>NOTÍCIAS</h1>
+            <a href="./pages/noticia/noticia.html">Últimas notícias</a>
+          </div>
+        </nav>
+      </section>
+      <section id="enderecoCBF">
+        <div class="container-endereco">
+          <p>
+            Confederação Brasileira de Futebol
+            <span class="p-endereco">CNPJ</span>: 24.745.815/0002-88
+          </p>
+          <p>
+            <span class="p-endereco">Endereço</span>: Avenida Roberto Caminho
+            Silva 130 - Barão Geral - São Paulo/SP
+          </p>
+          <p>
+            <span class="p-endereco">CEP</span>: 66548-254
+            <span class="p-endereco">Telefone</span>:(45) 3452-1238
+          </p>
+          <p>Termos de Uso | Política de Privacidade | Política de Cookies</p>
+        </div>
+        <div>
+          <h4>FEITO POR: <span class="nomeGrupo">Devs States</span></h4>
+        </div>
+      </section>
+    </footer>
+    <!-- Links externos -->
+    <script src="index.js"></script>
+  </body>
+</html>
